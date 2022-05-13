@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/rick-and-morty" element={<AllCharacters/>} />
-          <Route path='/rick-and-morty/character/:id' element={<OneCharacter/>} />
+          <Route path='https://yubito98.github.io/rick-and-morty/:id' element={<OneCharacter/>} />
         </Routes>
       </BrowserRouter>
     </div>
