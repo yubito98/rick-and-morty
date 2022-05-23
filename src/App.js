@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import AllCharacters from './components/AllCharacters';
 import OneCharacter from './components/OneCharacter';
 import './App.css';
@@ -7,12 +7,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/rick-and-morty" element={<AllCharacters/>} />
+          <Route path="/" element={<AllCharacters/>} />
           <Route path='/character/:id' element={<OneCharacter/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
