@@ -18,7 +18,7 @@ const AllCharacters = ()=>{
             <div className="row mt-5" >
                 {characters != null ?(
                     characters.map(character =>(
-                        <a href={`/character/${character.id}`} className="character-link col-12 col-md-6 col-lg-4 mb-5">
+                        <a href={`https://yubito98.github.io/rick-and-morty/#/character/${character.id}`} className="character-link col-12 col-md-6 col-lg-4 mb-5">
                             <div className="character-item">
                                 <div className="character-item-img">
                                     <img src={character.image} />
